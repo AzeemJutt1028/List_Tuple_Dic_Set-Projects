@@ -141,6 +141,9 @@ def countStd(database):
 
 # Function to show Top Student --------
 def showTop(database):
+    if(len(database) == 0):
+        print("\nDatabase is Empty")
+        return
     cgpa = []
 
     for key in database.keys():
