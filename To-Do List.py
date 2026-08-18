@@ -47,9 +47,10 @@ def addTask(task):
 
 # Function to remove task
 def remove(task):
-    print()     # For a line space
-    for i, el in enumerate(task, start=1):
-        print(i, el)
+    # print()     # For a line space
+    # for i, el in enumerate(task, start=1):
+    #     print(i, el)
+    viewTask(task)
 
     print()     # For a line space
     op = int(input("Enter Number of Task : "))
@@ -61,11 +62,12 @@ def remove(task):
     task.pop(op-1)
     return task
 
-# Function tomark task as completed
+# Function to mark task as completed
 def markTask(task):
-    print()     # For a line space
-    for i, el in enumerate(task, start=1):
-        print(i, el)
+    # print()     # For a line space
+    # for i, el in enumerate(task, start=1):
+    #     print(i, el)
+    viewTask(task)
 
     print()     # For a line space
     op = int(input("Enter Number of Task : "))
